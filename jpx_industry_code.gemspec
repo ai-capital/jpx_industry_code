@@ -13,7 +13,8 @@ Gem::Specification.new do |s|
   s.email       = 'deraru@gmail.com'
   s.files       = [
     "lib/jpx_industry_code.rb",
-    "lib/jpx_industry_code/category.rb"
+    "lib/jpx_industry_code/category.rb",
+    "lib/jpx_industry_code/errors.rb"
   ]
   s.homepage    = 'https://github.com/ai-capital/jpx_industry_code'
   s.license     = 'MIT'

@@ -32,7 +32,7 @@ JpxIndustryCode.find_by(code: '2050')
 JpxIndustryCode.find_by(id: 0)
 => nil
 
-# If you prefer raise error rather than nil, use bang method.
+# If you prefer raise error rather than return nil, use bang method.
 JpxIndustryCode.find_by!(id: 0)
 => JpxIndustryCode::Errors::NotFoundError
 
@@ -45,7 +45,10 @@ JpxIndustryCode::Category.all
 JpxIndustryCode::Category.find_by(id: 1)
 => {:id=>1, :name=>"水産・農林業"}
 
-# If you prefer raise error rather than nil, use bang method.
+JpxIndustryCode::Category.find_by(id: 0)
+=> nil
+
+# If you prefer raise error rather than return nil, use bang method.
 JpxIndustryCode::Category.find_by!(id: 0)
 => JpxIndustryCode::Errors::NotFoundError
 

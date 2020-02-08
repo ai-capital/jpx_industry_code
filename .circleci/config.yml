@@ -5,7 +5,7 @@
 version: 2.1
 
 orbs:
-  ruby: circleci/ruby@0.1.2 # Ruby orb registry: https://circleci.com/orbs/registry/orb/circleci/ruby
+  ruby: circleci/ruby:2.7.0
 
 jobs:
   build:

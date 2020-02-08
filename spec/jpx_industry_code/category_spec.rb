@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe JpxIndustryCode::Category do
   describe '.all' do
     subject { JpxIndustryCode::Category.all }

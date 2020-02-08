@@ -27,6 +27,8 @@ class JpxIndustryCode
       end
 
       def find_by(find_option)
+        return nil unless validate_find_option(find_option)
+
         all.find do |jpx_industry_code_category|
           jpx_industry_code_category[find_option.flatten[0]] == find_option.flatten[1]
         end
@@ -37,6 +39,12 @@ class JpxIndustryCode
       def validate_find_option!(find_option)
         raise JpxIndustryCode::Errors::InvalidArgumentError, ':id or :name must be specified.' if !find_option.is_a?(Hash) || (find_option[:id].nil? && find_option[:name].nil?)
         raise JpxIndustryCode::Errors::InvalidArgumentError, 'Single keyword argument can be specified.' if find_option.keys.length > 1
+      end
+
+      def validate_find_option(find_option)
+        return false if !find_option.is_a?(Hash) || find_option.keys.length > 1
+
+        true
       end
 
       def raise_not_found

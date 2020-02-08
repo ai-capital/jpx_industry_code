@@ -18,4 +18,7 @@ Gem::Specification.new do |s|
   ]
   s.homepage    = 'https://github.com/ai-capital/jpx_industry_code'
   s.license     = 'MIT'
+
+   s.add_development_dependency "rspec"
+   s.add_development_dependency "pry-byebug"
 end

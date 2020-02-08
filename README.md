@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/ai-capital/jpx_industry_code/tree/master.svg?style=svg)](https://circleci.com/gh/ai-capital/jpx_industry_code/tree/master)
+
 # jpx_industry_code
 
 JPX industry code and category gem.

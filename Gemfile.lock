@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jpx_industry_code (0.0.5)
+    jpx_industry_code (1.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -35,8 +35,8 @@ PLATFORMS
 
 DEPENDENCIES
   jpx_industry_code!
-  pry-byebug
-  rspec
+  pry-byebug (~> 3.8)
+  rspec (~> 3.9)
 
 BUNDLED WITH
    2.1.4
